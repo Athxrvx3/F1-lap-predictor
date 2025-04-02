@@ -1,0 +1,59 @@
+:root {
+    --body-text-font-family: "Inter", Helvetica;
+    --body-text-font-size: 20px;
+    --body-text-font-style: normal;
+    --body-text-font-weight: 500;
+    --body-text-letter-spacing: 0px;
+    --body-text-line-height: 150%;
+    --button-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    --color-background-danger-default: var(--color-primitives-red-500);
+    --color-background-danger-hover: var(--color-primitives-red-600);
+    --color-border-danger-default: var(--color-primitives-red-700);
+    --color-border-danger-secondary: var(--color-primitives-red-600);
+    --color-primitives-red-100: rgba(254, 233, 231, 1);
+    --color-primitives-red-400: rgba(244, 119, 106, 1);
+    --color-primitives-red-500: rgba(236, 34, 31, 1);
+    --color-primitives-red-600: rgba(192, 15, 12, 1);
+    --color-primitives-red-700: rgba(144, 11, 9, 1);
+    --color-text-danger-on-danger: var(--color-primitives-red-100);
+    --m3-display-large-font-family: "Roboto", Helvetica;
+    --m3-display-large-font-size: 57px;
+    --m3-display-large-font-style: normal;
+    --m3-display-large-font-weight: 400;
+    --m3-display-large-letter-spacing: -0.25px;
+    --m3-display-large-line-height: 64px;
+    --single-line-body-base-font-family: "Inter", Helvetica;
+    --single-line-body-base-font-size: 16px;
+    --single-line-body-base-font-style: normal;
+    --single-line-body-base-font-weight: 400;
+    --single-line-body-base-letter-spacing: 0px;
+    --single-line-body-base-line-height: 100%;
+    --size-radius-200: 8px;
+    --size-space-200: 8px;
+    --size-space-300: 12px;
+  }
+  
+  /*
+  
+  To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+  
+  <body data-color-mode="SDS-light">
+      <!-- the rest of your content -->
+  </body>
+  
+  You can apply the theme on any DOM node, not just the `body`
+  
+  */
+  
+  [data-color-mode="SDS-light"] {
+    --color-background-danger-default: var(--color-primitives-red-500);
+    --color-background-danger-hover: var(--color-primitives-red-600);
+    --color-border-danger-secondary: var(--color-primitives-red-600);
+  }
+  
+  [data-color-mode="SDS-dark"] {
+    --color-background-danger-default: var(--color-primitives-red-600);
+    --color-background-danger-hover: var(--color-primitives-red-700);
+    --color-border-danger-secondary: var(--color-primitives-red-400);
+  }
+  

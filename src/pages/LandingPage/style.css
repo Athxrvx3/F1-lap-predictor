@@ -1,0 +1,198 @@
+/* General styles for the landing page */
+.landing-page {
+  position: relative;
+  background: linear-gradient(135deg, #000000, #550000); /* Black with a hint of red */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  color: white; /* Ensure text is visible on the dark background */
+}
+
+/* Style for dropdown container */
+.dropdowns-container {
+  display: flex;
+  flex-direction: column; /* Stack dropdowns vertically */
+  gap: 20px; /* Add spacing between dropdowns */
+  position: absolute; /* Ensure dropdowns are positioned relative to their container */
+  left: 10%; /* Move the dropdowns 50px to the left */
+  z-index: 1; /* Set a base z-index for the container */
+}
+
+/* Style for dropdown */
+.dropdown {
+  width: 250px; /* Adjust width as needed */
+  margin-top: 10px;
+  position: relative; /* Ensure dropdown options are positioned relative to the dropdown */
+  z-index: 2; /* Ensure dropdown options appear above other elements */
+}
+
+/* Ensure the selected option text is black */
+.css-1uccc91-singleValue {
+  color: black !important; /* Force the font color of the selected option to black */
+}
+
+/* Ensure the dropdown options text is black */
+.css-1n7v3ny-option {
+  color: black !important; /* Force the font color of the dropdown options to black */
+  background-color: white !important; /* Ensure the background is white */
+}
+
+/* Add hover effect for dropdown options */
+.css-1n7v3ny-option:hover {
+  background-color: #f0f0f0 !important; /* Add a light gray background on hover */
+}
+
+/* Ensure the dropdown menu does not get overlapped */
+.css-26l3qy-menu {
+  z-index: 9999 !important; /* Ensure the dropdown menu appears above all other elements */
+  position: absolute; /* Ensure the dropdown menu is positioned correctly */
+  background-color: white; /* Ensure the dropdown menu background is white */
+  border: 1px solid #ccc; /* Add a border for better visibility */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+}
+
+/* Debugging: Highlight the dropdown menu */
+.dropdown .css-26l3qy-menu {
+  background-color: red !important; /* Temporarily set the background to red */
+  color: black !important; /* Ensure text is black */
+  z-index: 9999 !important; /* Ensure it appears above all other elements */
+}
+
+/* Debugging: Highlight the dropdown options */
+.dropdown .css-1n7v3ny-option {
+  background-color: yellow !important; /* Temporarily set the background to yellow */
+  color: black !important; /* Ensure text is black */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style for Image0 */
+.image0-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image0 {
+  position: absolute;
+  top: 1.7%;
+  left: 40%;
+  width: 500px;
+  height: auto;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5)); /* Add a shadow for better visibility */
+}
+
+/* Style for the Go button */
+.go-button {
+  width: 300px;
+  height: 50px;
+  background-color: #ff4d4d; /* Bright red for better visibility */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px auto; /* Add spacing between the output and the button */
+  display: block;
+  transition: transform 0.2s, background-color 0.2s; /* Add smooth transitions */
+}
+
+.go-button:hover {
+  background-color: #e60000; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Style for the output screen */
+.output-screen {
+  width: 400px;
+  height: 200px;
+  background-color: #333;
+  color: white;
+  border: 2px solid #555;
+  border-radius: 10px;
+  margin: 20px auto; /* Add spacing above and below the output screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow for better visibility */
+}
+
+.prediction-output {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.error-output {
+  font-size: 16px;
+  color: red;
+}
+
+/* Style for the image-5 button */
+.image-5-container {
+  position: absolute;
+  top: 10px; /* Adjusted to top-left corner */
+  left: 10px;
+  background-color: white; /* White background surrounding the button */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  padding: 5px; /* Add padding around the image */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
+}
+
+.image-5-button {
+  width: 100px; /* Adjust the size of the button */
+  height: auto;
+  cursor: pointer;
+}
+
+/* Style for image-6 */
+.image-6 {
+  position: absolute;
+  top: 15%; /* Adjust the vertical position */
+  left: 42%; /* Adjust the horizontal position */
+  width: 250px; /* Adjust the width */
+  height: auto; /* Adjust the height */
+  cursor: pointer;
+  border-radius: 5px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for glow effect */
+}
+
+.image-6:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Add a glow effect on hover */
+}
+
+/* Style for the header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow to the text */
+}
+
+.header p {
+  font-size: 18px;
+  color: #ddd;
+}
+
+/* Style for the footer */
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #ccc;
+  font-size: 14px;
+}
