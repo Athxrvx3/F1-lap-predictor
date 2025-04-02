@@ -2,6 +2,7 @@
   "name": "f1-lap-predictor",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Athxrvx3.github.io/F1-lap-predictor"
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
